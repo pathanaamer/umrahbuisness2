@@ -1,0 +1,284 @@
+body {
+  line-height: 2.6;
+}
+
+/* Make h1 text white */
+.header-container .logo h1 {
+  color: white;
+}
+
+/* Contact Banner Styling */
+.contact-banner {
+  background: black; /* Change to any color you like */
+  color: white;
+  text-align: center;
+  padding: 10px 0;
+  font-size: 15px;
+  font-weight: bold;
+}
+
+/* Make Phone Number Clickable & Styled */
+.contact-banner a {
+  color: yellow; /* Highlight the number */
+  text-decoration: none;
+  font-weight: bold;
+}
+
+.contact-banner a:hover {
+  text-decoration: underline;
+}
+
+/* Header - Transparent */
+header {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  padding: 20px 0;
+  background: transparent;
+  z-index: 1000;
+}
+
+.header-container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0 20px;
+}
+
+/* Global Styles */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+
+
+.container {
+  width: 120%;
+  max-width: 1200px;
+  margin: auto;
+  padding: 20px;
+}
+
+
+.logo {
+  display: flex;
+  align-items: center;
+}
+
+.logo img {
+  width: 100px;
+  height: 100px;
+  margin-right: 10px;
+}
+
+nav ul {
+  list-style: none;
+  display: flex;
+}
+
+nav ul li {
+  margin: 0 15px;
+}
+
+nav ul li a {
+  color: #fff;
+  text-decoration: none;
+  font-weight: bold;
+}
+
+/* Hero Section */
+.hero {
+  background: url('hero.jpg') no-repeat center center/cover;
+  height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  color: #fff;
+  position: relative;
+}
+
+.hero::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(0, 0, 0, 0.5); /* Dark overlay to improve readability */
+}
+
+.hero .container {
+  position: relative;
+  z-index: 2;
+}
+
+.hero h2 {
+  font-size: 3em;
+  margin-bottom: 10px;
+}
+
+.hero p {
+  font-size: 1.4em;
+  margin-bottom: 20px;
+}
+
+.btn {
+  background-color: #FFC107; /* Yellow */
+  color: #000;
+  padding: 12px 24px;
+  text-decoration: none;
+  font-weight: bold;
+  border-radius: 5px;
+  font-size: 1.2em;
+}
+/* About Section */
+.about {
+  background-color: #f4f4f4;
+  padding: 40px 0;
+}
+
+.about h2 {
+  color: #007BFF; /* Blue */
+  margin-bottom: 20px;
+}
+
+/* Owner Section Styling */
+.owner-section {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  padding: 50px 20px;
+  background: #93C572; /* Light background */
+}
+
+/* Owner Container */
+.owner-section .container {
+  display: flex;
+  flex-wrap: wrap;
+  max-width: 900px;
+  justify-content: center;
+  align-items: center;
+}
+
+/* Owner Image Styling */
+.owner-image img {
+  width: 260px; /* Adjust size */
+  height: 260px;
+  border-radius: 50%; /* Circular image */
+  object-fit: cover;
+  border: 5px solid #007bff; /* Blue border */
+  margin-right: 20px;
+}
+
+/* Owner Info Styling */
+.owner-info {
+  max-width: 500px;
+}
+
+.owner-info h2 {
+  color: #007bff; /* Blue title */
+  margin-bottom: 10px;
+}
+
+.owner-info h3 {
+  color: #333;
+  font-size: 22px;
+  margin-bottom: 8px;
+}
+
+.owner-info p {
+  color: #555;
+  font-size: 16px;
+  line-height: 1.5;
+}
+
+/* Packages Section */
+.packages {
+  padding: 40px 0;
+}
+
+.packages h2 {
+  text-align: center;
+  color: #000;
+  margin-bottom: 30px;
+}
+
+.package-list {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 20px;
+  justify-content: space-between;
+}
+
+.package {
+  background-color: #fff;
+  border: 2px solid #FFC107; /* Yellow border */
+  padding: 20px;
+  flex: 1 1 calc(33.333% - 40px);
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.package h3 {
+  margin-bottom: 10px;
+  color: #007BFF; /* Blue */
+}
+
+/* Contact Section */
+.contact {
+  background-color: #A9A9A9;
+  padding: 40px 0;
+  text-align: left;
+}
+
+.contact h2 {
+  color: #007BFF; /* Blue */
+  margin-bottom: 40px;
+}
+
+/* Google Map Box Styling */
+.map-box {
+  width: 300px; /* Adjust width */
+  background: #007bff; /* Blue background */
+  color: white;
+  text-align: center;
+  padding: 15px;
+  border-radius: 10px; /* Rounded corners */
+  font-size: 16px;
+  font-weight: bold;
+  cursor: pointer;
+  transition: 0.3s;
+  margin: 20px auto; /* Center the box */
+}
+
+/* Make the text clickable */
+.map-box a {
+  text-decoration: none;
+  color: white;
+  display: block;
+}
+
+/* Hover effect */
+.map-box:hover {
+  background: #0056b3; /* Darker blue on hover */
+}
+
+/* Footer */
+footer {
+  background-color: #000;
+  color: #fff;
+  text-align: center;
+  padding: 20px 0;
+}
+
+/* Scroll Effect (Optional) */
+.scroll-header {
+   /* Semi-transparent blue on scroll */
+  padding: 15px 0;
+  position: fixed;
+  transition: 0.3s ease-in-out;
+}
